@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+<title>Dre game</title>
+
+<style>
+
+</style>
+
+<link rel="stylesheet" href="main-css.css">
+
+</head>
+
+
+
+  <body>
+    
+	<div class="mainContainer">
+
+  <div class="main title">
+    Predict the answer as well as you can, you will be timed after starting!
+  </div>
+  <div class="main gameBox">
+    <div class="line sided">
+      <div class="text">
+        <button id="startGame" class="button">Start!</button>
+      </div>
+      <div id="counter">
+        0/0
+      </div>
+      <div class="timeBox" id="timeBox">
+        0s
+      </div>
+    </div>
+    <div class="line">
+      <div class="question" id="conditionId">
+        x + y = ?
+      </div>
+    </div>
+    <div class="line">
+      <div class="centered">
+        <input type="text" id="answerField" placeholder="Your answer" class="answerFieldClass" autocomplete="off">
+      </div>
+    </div>
+    <div class="line centered">
+        <button id="submit" class="button">
+          Enter
+        </button>
+    </div>
+    <div class="line centered">
+      Your score:
+    </div>
+    <div class="line sided">
+      <div class="stats">
+        <div class="scoreTitle">
+          Total
+        </div>
+        <div id="totalScoreBox">
+          0
+        </div>
+      </div>
+      <div class="stats flyWordNormal hidden" id="flyWord">
+      word
+      </div>
+      <div class="stats">
+        <div class="scoreTitle">
+          Last
+        </div>
+        <div class="sided currentScoreDetailed">
+            <div id="lastScorePoints">
+            0
+            </div>
+            <div>
+            ×
+            </div>
+            <div id="lastScoreTime">
+            0
+            </div>
+        </div>
+        <div id="lastScoreBox">
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+	
+  </body>
+
+
+<script src="main-js.js"></script>
+
+
+</html>

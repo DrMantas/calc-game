@@ -1,0 +1,152 @@
+
+:root {
+  --w-game-box: 200px;
+  --h-game-box: 300px;
+  --w-title: 180px;
+  --h-title: 60px;
+  
+  background-color: #E2F0CB;
+  font-family: Bahnschrift, Arial, Serif;
+  font-size: 16px;
+  
+  --w-positioning: calc(var(--w-game-box) / 2);
+  --h-positioning: calc((var(--h-game-box) + var(--h-title) + 30px) / 2);
+  
+  /* 30px comes from margin of title */
+  }
+  
+
+ 
+.mainContainer{
+  margin-left: calc(50vw - var(--w-positioning));
+  margin-top: calc(50vh - var(--h-positioning));
+}
+
+.main {
+  border: 2px solid #437dba;
+  border-radius: 10px;
+  
+  background-color: white;
+  }
+  
+.gameBox {
+  width: var(--w-game-box);
+  height: var(--h-game-box);
+}
+  
+.title{
+  width: var(--w-title);
+  height: var(--h-title);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.centeredFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  display: block;
+  margin: 15px;
+}
+
+.sided{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.question{
+  /* border: 1px solid green; */
+  text-align: center;
+  font-size: 20px;
+}
+
+.button{
+  
+  border: 1.5px solid #437dba;
+  border-radius: 5px;
+  outline: 0px;
+  /* width: 50%; */
+  background-color: #6dd3e3;
+  font-size: 16px;
+  box-shadow: 0 2px 0 #437dba;
+  
+}
+
+.button:hover{
+  background-color: #4eacba;
+}
+
+.button:active{
+  position: relative;
+  top: 1px;
+}
+
+.answerFieldClass{
+  background-color: #b3dfe6;
+  outline: 0px;
+  border: 2px solid #b3dfe6;
+  border-radius: 3px;
+  padding: 4px;
+  width: 70%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#totalScoreBox {
+  font-size: 25px;
+}
+
+.currentScoreDetailed{
+  font-size: 14px;
+}
+
+.scoreTitle{
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+#lastScoreBox {
+  font-size: 20px;
+}
+
+.redBorder {
+  border: 2px solid red;
+  }
+
+.flyWordNormal {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  justify-content: center;
+  color: #437dba;
+  
+  top: 0px;
+  transition: opacity 1s, top 1s;
+  
+}
+
+.hidden {
+  opacity: 0;
+  top: 10px;
+  position: relative;
+  
+}
